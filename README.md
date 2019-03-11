@@ -11,7 +11,7 @@
 
 ## Project Idea
 ```md
-A web application to create workouts. I wanted to create an application that would be useful and be able to be expanded upon.
+A single-page web application to create and post workout challenges.
 ```
 
 ## Write between 3-5 user stories
@@ -22,49 +22,40 @@ A web application to create workouts. I wanted to create an application that wou
 3. As a user, I want to be notified all actions, including successful/failed actions.
 4. As a user, I want to be able to see when I am logged in.
 5. As a user, I want to be able to change my password.
-6. As a user, I want to be able to create multiple workouts.
-7. As a user, be able to select which excersizes get added to each workout.
-8. 7. As a user, be able to change which excersizes are in each workout after it has been created.
-9. As a user, I want to be able to scroll through my workouts.
+6. As a user, I want to be able to create a workout challenge.
+7. As a user, I want to be able to see a challenge I have created.
+8. As a user, I want to be able to see challenges others have created.
+9. As a user, I want to be able to update a challenge I have created.
+10. As a user, I want to be able to delete a challenge I have created.
 ```
 
 ## Planned tables and columns
 
 ```md
 A users table with columns for username, email, password.
-A workouts table with a column for the name of the workout.
-A excersizes table with a column for the excersize name, category, muscle_goup,
-reps and sets.
+A challenge table, with a column for name and a description of the challenge.
 ```
 
 ## ERD (entity relationship diagram)
-![Imgur](https://i.imgur.com/WGyGcB1.jpg)
+![ERD](https://i.imgur.com/oQKSeQQ.jpg)
 
 ## Routing
-
-What routes will you need to make the proper request to your API?
-
 ```md
 POST	/sign-up	users#signup
 POST	/sign-in	users#signin
 DELETE	/sign-out	users#signout
 PATCH	/change-password	users#changepw
-GET	/workouts	workouts#index
-POST	/workouts	games#create
-GET	/workouts/:id	games#show
-PATCH	/workouts/:id	games#update
-GET	/excersizes	workouts#index
-POST	/excersizes	games#create
-GET	/excersizes/:id	games#show
-PATCH	/excersizes/:id	games#update
-
+GET	/challenge	workouts#index
+POST	/challenges	games#create
+GET	/challenges/:id	games#show
+PATCH	/challenges/:id	games#update
 ```
 
 ## Wireframes
-![Imgur](https://i.imgur.com/8C5uSby.jpg)
+![Wireframes](https://i.imgur.com/my5Wnhz.jpg)
 
 ## Mock-up
-![Imgur](https://i.imgur.com/BvYX46T.png)
+![Mock-up](https://i.imgur.com/PbvyEvH.png)
 
 ## Timetable
 ```md
