@@ -1,4 +1,3 @@
-# Rails API
 # READ ME
 
 ## Project information
@@ -38,16 +37,9 @@ A excersizes table with a column for the excersize name, category, muscle_goup,
 reps and sets.
 ```
 
-## Create an ERD (entity relationship diagram)
+## ERD (entity relationship diagram)
+![Imgur](https://i.imgur.com/WGyGcB1.jpg)
 
-These are the diagrams that show how your tables are related to one another
-(one to many, many to many, etc).
-
-Include an image (or a link to image) below.
-
-```md
-[Imgur](https://i.imgur.com/WGyGcB1.jpg)
-```
 ## Routing
 
 What routes will you need to make the proper request to your API?
@@ -69,19 +61,28 @@ PATCH	/excersizes/:id	games#update
 ```
 
 ## Wireframes
+![Imgur](https://i.imgur.com/8C5uSby.jpg)
 
-Please create a wireframe of your planned front end.
-
-```md
-[Imgur](https://i.imgur.com/8C5uSby.jpg)
-```
+## Mock-up
+![Imgur](https://i.imgur.com/BvYX46T.png)
 
 ## Timetable
-
-Write a basic timetable for yourself, you don't have to stick to it but it
-helps to go in with a plan.
-
 ```md
 I plan to follow the provided schedule allowing one day for each section,
 moving to the next section if I complete a section early.
+```
+
+## Technologies Used
+```md
+1. Atom
+2. Be Focused (pomodoro app)
+3. HTML
+4. CSS
+5. Javascript
+6. Bootstrap
+7. Ruby/Rails
+8. Heroku
+9. Handlebars
+10. Pages (Mock-up)
+11. Postgresql
 ```
