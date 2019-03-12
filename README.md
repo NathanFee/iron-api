@@ -49,6 +49,7 @@ GET	/challenge	workouts#index
 POST	/challenges	games#create
 GET	/challenges/:id	games#show
 PATCH	/challenges/:id	games#update
+DELETE /challenges/:id	games#destroy
 ```
 
 ## Wireframes
