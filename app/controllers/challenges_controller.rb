@@ -44,7 +44,7 @@ class ChallengesController < ProtectedController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_challenge
-    @challenge = current_user.challenge.find(params[:id])
+    @challenge = current_user.challenges.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
