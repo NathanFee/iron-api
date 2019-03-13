@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ChallengesController < ProtectedController
-  before_action :set_challenge, only: %i[show update destroy]
+  before_action :set_challenge, only: %i[update destroy]
 
   # GET /challenges
   def index
@@ -12,7 +12,7 @@ class ChallengesController < ProtectedController
 
   # GET /challenges/1
   def show
-    render json: @challenge
+    render json: Challenge.find(params[:id])
   end
 
   # POST /challenges
