@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class ChallengesController < ProtectedController
-  before_action :set_challenge, only: [:show, :update, :destroy]
+  before_action :set_challenge, only: %i[show update destroy]
 
   # GET /challenges
   def index
@@ -39,6 +41,7 @@ class ChallengesController < ProtectedController
   end
 
   private
+
   # Use callbacks to share common setup or constraints between actions.
   def set_challenge
     @challenge = current_user.challenge.find(params[:id])
