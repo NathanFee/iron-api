@@ -15,7 +15,7 @@ class ChallengesController < ProtectedController
 
   # POST /challenges
   def create
-    @challenge = Challenge.new(challenge_params)
+    @challenge = current_user.challenges.build(challenge_params)
 
     if @challenge.save
       render json: @challenge, status: :created, location: @challenge
@@ -39,13 +39,13 @@ class ChallengesController < ProtectedController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_challenge
-      @challenge = Challenge.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_challenge
+    @challenge = current_user.challenge.find(params[:id])
+  end
 
-    # Only allow a trusted parameter "white list" through.
-    def challenge_params
-      params.require(:challenge).permit(:challenge_name, :description)
-    end
+  # Only allow a trusted parameter "white list" through.
+  def challenge_params
+    params.require(:challenge).permit(:challenge_name, :description)
+  end
 end
