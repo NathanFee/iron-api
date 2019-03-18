@@ -14,21 +14,6 @@
 A single-page web application to create and post workout challenges.
 ```
 
-## Write between 3-5 user stories
-
-```md
-1. As a user, I want to be able to sign-up, sign-in and log-out of my own account.
-2. As a user, I want all forms to clear after I fill them to protect my information.
-3. As a user, I want to be notified all actions, including successful/failed actions.
-4. As a user, I want to be able to see when I am logged in.
-5. As a user, I want to be able to change my password.
-6. As a user, I want to be able to create a workout challenge.
-7. As a user, I want to be able to see a challenge I have created.
-8. As a user, I want to be able to see challenges others have created.
-9. As a user, I want to be able to update a challenge I have created.
-10. As a user, I want to be able to delete a challenge I have created.
-```
-
 ## Planned tables and columns
 
 ```md
@@ -51,12 +36,6 @@ GET	/challenges/:id	 challenges#show
 PATCH	/challenges/:id	 challenges#update
 DELETE /challenges/:id  challenges#destroy
 ```
-
-## Wireframes
-![Wireframes](https://i.imgur.com/my5Wnhz.jpg)
-
-## Mock-up
-![Mock-up](https://i.imgur.com/PbvyEvH.png)
 
 ## Timetable
 ```md
